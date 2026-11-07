@@ -24,6 +24,33 @@ The project demonstrates a classic layered web architecture with persistence, se
 - Docker Compose setup for local launch;
 - GitHub Actions build workflow.
 
+## Screenshots
+
+### Room catalog
+
+![Room catalog](docs/screenshots/room-list.png)
+
+The application displays available hotel rooms with descriptions, prices and photos. Unauthorized users can browse the catalog, while booking is available after authentication.
+
+### Booking form
+
+![Booking form](docs/screenshots/booking-form.png)
+
+Authenticated users can select a room and specify check-in and check-out dates. Before creating a reservation, the service checks whether the selected room is available for the requested period.
+
+### User reservation history
+
+![User reservation history](docs/screenshots/user-bookings.png)
+
+After authentication, users can view their active reservations, including room information and booking dates.
+
+### Room photo upload
+
+![Room photo upload](docs/screenshots/photo-upload.png)
+
+Administrators can upload room photos through the web interface. Images are stored in PostgreSQL and displayed in the room catalog.
+
+
 ## Tech stack
 
 **Backend:** Java 17, Spring Framework, Spring Boot 2.7, Spring MVC, Spring Data JPA, Hibernate  
